@@ -22,8 +22,9 @@ public class GreetingController {
     @ApiOperation(value = "greeting方法", notes = "greeting")
     @ApiImplicitParam(name = "name", value = "打招呼", required = true, dataType = "String", paramType = "query")
     @GetMapping("/greeting")
-    public Greeting greeting(@RequestParam(value = "name") String name) {
+    public Greeting greeting(@RequestParam(defaultValue = "atom-boot-web!") String name) {
 
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
+
 }
