@@ -19,7 +19,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-         <!--Swagger2 -->
+        <!--Swagger2 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -61,9 +61,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.1.0.RELEASE</version>
-                <configuration>
-                    <mainClass>com.watent.web.Application</mainClass>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>
